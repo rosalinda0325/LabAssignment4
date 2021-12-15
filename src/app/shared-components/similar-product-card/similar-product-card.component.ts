@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-similar-product-card',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SimilarProductCardComponent implements OnInit {
 
+  @Input() cardItem;
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    console.log('from similar products card item: ', this.cardItem);
   }
 
 }

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SimilarProductCardComponent } from './similar-product-card.component';
+import { ArtistCardComponent } from './artist-card.component';
 
-describe('SimilarProductCardComponent', () => {
-  let component: SimilarProductCardComponent;
-  let fixture: ComponentFixture<SimilarProductCardComponent>;
+describe('ArtistCardComponent', () => {
+  let component: ArtistCardComponent;
+  let fixture: ComponentFixture<ArtistCardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SimilarProductCardComponent ]
+      declarations: [ ArtistCardComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SimilarProductCardComponent);
+    fixture = TestBed.createComponent(ArtistCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

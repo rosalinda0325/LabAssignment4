@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { routerModule } from './routes';
+
+import { SharedComponentsModule } from './shared-components/shared-components.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { routerModule } from './routes';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    routerModule
+    routerModule,
+    SharedComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
